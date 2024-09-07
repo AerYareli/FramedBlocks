@@ -152,66 +152,6 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-<<<<<<< Updated upstream
-    compileOnly fg.deobf("team.chisel.ctm:CTM:1.20.1-1.1.8+4")
-
-    //runtimeOnly fg.deobf("curse.maven:puzzleslib-495476:4621178") //Only needed when Diagonal Fences or Diagonal Windows is switched to implementation
-    compileOnly fg.deobf("curse.maven:diagonalfences-458048:4611775")
-    compileOnly fg.deobf("curse.maven:diagonalwindows-891328:4660584")
-
-    compileOnly fg.deobf("curse.maven:buildinggadgets-298187:3829297")
-
-    implementation fg.deobf("xfacthd.contex:ConnectedTextures:2.1:slim") { transitive = false }
-
-    implementation fg.deobf("curse.maven:athena-841890:5176879")
-    //runtimeOnly fg.deobf("curse.maven:resfullib-570073:5210240")
-    //runtimeOnly fg.deobf("curse.maven:chipped-456956:5270039")
-
-    compileOnly fg.deobf("curse.maven:xycraft_core-653786:4788862")
-    compileOnly fg.deobf("curse.maven:xycraft_world-653789:4788863")
-
-    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
-    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
-    //runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
-
-    // Switch Arch, Cloth and REI-forge to impl for runtime testing
-    compileOnly fg.deobf("dev.architectury:architectury-forge:${arch_version}")
-    compileOnly fg.deobf("me.shedaniel.cloth:cloth-config-forge:${cloth_version}")
-    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${rei_version}")
-    //runtimeOnly fg.deobf("curse.maven:reipc-521393:4723408")
-    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-api-forge:${rei_version}")
-    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-default-plugin-forge:${rei_version}")
-    compileOnly fg.deobf("me.shedaniel:REIPluginCompatibilities-forge-annotations:${reipcanno_version}")
-
-    compileOnly fg.deobf("dev.emi:emi-forge:${emi_version}+${minecraft_version}:api")
-    runtimeOnly fg.deobf("dev.emi:emi-forge:${emi_version}+${minecraft_version}")
-
-    //runtimeOnly fg.deobf("curse.maven:spark-361579:3767286")
-
-    //runtimeOnly fg.deobf("curse.maven:rubidium-574856:4684247")
-    //runtimeOnly fg.deobf("org.embeddedt:embeddium-${embeddium_mc_version}:${embeddium_version}+mc${embeddium_mc_version}")
-    //runtimeOnly fg.deobf("curse.maven:oculus-581495:5299671")
-    //runtimeOnly fg.deobf("curse.maven:starlight-forge-526854:4631193")
-
-    compileOnly fg.deobf("com.simibubi.create:create-1.20.1:0.5.1.f-27:slim") { transitive = false }
-    compileOnly fg.deobf("com.jozufozu.flywheel:flywheel-forge-1.20.1:0.6.10-8")
-    //runtimeOnly fg.deobf("com.tterrag.registrate:Registrate:MC1.20-1.3.11") //Only needed when Create and/or Flywheel are switched to implementation
-
-    compileOnly fg.deobf("curse.maven:moonlight-499980:4621773")
-    compileOnly fg.deobf("curse.maven:supplementaries-412082:4622527")
-
-    //runtimeOnly fg.deobf("curse.maven:corelib-454372:4927036")
-    //runtimeOnly fg.deobf("curse.maven:fusion-854949:5005130")
-    //runtimeOnly fg.deobf("curse.maven:conglass-383129:5002550")
-
-    compileOnly fg.deobf("curse.maven:nocubes-309664:3944569")
-
-    implementation fg.deobf("curse.maven:guidebook-253874:4593765")
-
-    compileOnly fg.deobf("curse.maven:jade-324717:5072729")
-
-    compileOnly fg.deobf("curse.maven:atlasviewer-633577:4762356")
-=======
     compileOnly "team.chisel.ctm:CTM:1.20.1-1.1.8+4"
 
     //runtimeOnly "curse.maven:puzzleslib-495476:4621178") //Only needed when Diagonal Fences or Diagonal Windows is switched to implementatio
@@ -270,7 +210,6 @@ dependencies {
     compileOnly "curse.maven:jade-324717:5072729"
 
     compileOnly "curse.maven:atlasviewer-633577:4762356"
->>>>>>> Stashed changes
 
     minecraftLibrary(group: 'com.github.ben-manes.caffeine', name: 'caffeine', version: '3.1.1')
     jarJar(group: 'com.github.ben-manes.caffeine', name: 'caffeine', version: '[3.1.1,4.0.0)') {
