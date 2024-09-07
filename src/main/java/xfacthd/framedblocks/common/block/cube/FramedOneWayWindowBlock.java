@@ -16,8 +16,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+<<<<<<< Updated upstream
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+=======
+import net.minecraft.world.phys.shapes.*;
+>>>>>>> Stashed changes
 import net.minecraftforge.client.extensions.common.IClientBlockExtensions;
 import org.jetbrains.annotations.Nullable;
 import xfacthd.framedblocks.api.block.FramedBlockEntity;
@@ -94,6 +98,17 @@ public class FramedOneWayWindowBlock extends FramedBlock
             return Shapes.empty();
         }
         return super.getOcclusionShape(state, level, pos);
+    }
+
+    
+    @Override
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx)
+    {
+        if (isIntangible(state, level, pos, ctx))
+        {
+            return Shapes.empty();
+        }
+        return super.getShape(state, level, pos, ctx);
     }
 
     @Override

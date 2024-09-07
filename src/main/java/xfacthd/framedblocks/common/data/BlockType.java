@@ -232,7 +232,7 @@ public enum BlockType implements IBlockType
     FRAMED_SLOPED_STAIRS                            ( true,  true, false,  true,  true,  true, false, false, ConTexMode.FULL_FACE, new SlopedStairsShapes()),
     FRAMED_VERTICAL_SLOPED_STAIRS                   ( true,  true, false,  true,  true,  true, false, false, ConTexMode.FULL_FACE, new VerticalSlopedStairsShapes()),
     FRAMED_MINI_CUBE                                (false, false, false,  true,  true,  true, false, false, null, Block.box(4, 0, 4, 12, 8, 12)),
-    FRAMED_ONE_WAY_WINDOW                           (false, false,  true, false,  true, false, false, false, ConTexMode.FULL_FACE, Shapes.block()),
+    FRAMED_ONE_WAY_WINDOW                           (false, false,  true, false,  true, true, false, false, ConTexMode.FULL_FACE, Shapes.block()),
     FRAMED_BOOKSHELF                                ( true, false, false, false,  true,  true, false, false, ConTexMode.FULL_FACE, Shapes.block()),
     FRAMED_CHISELED_BOOKSHELF                       ( true, false,  true, false,  true,  true, false, false, ConTexMode.FULL_FACE, Shapes.block()),
     FRAMED_CENTERED_SLAB                            ( true, false, false,  true,  true,  true, false, false, ConTexMode.DETAILED, Block.box(0, 4, 0, 16, 12, 16)),
